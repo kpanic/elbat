@@ -121,6 +121,11 @@ defmodule Elbat do
       │ :plain   │
       │ :unicode │
       └──────────┘
+
+      iex> IO.write Table.table([["list", "is", "horizontal"]])
+      +------+----+-----------+
+      | list | is | horizontal|
+      +------+----+-----------+
   """
   def table(data, style \\ :plain) do
     cond do
