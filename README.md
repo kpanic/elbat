@@ -1,4 +1,4 @@
-# Table
+# Elbat (formerly known as Table)
 
 [![hex][hex-image]][hex-url]
 
@@ -6,10 +6,10 @@ ascii tables for cli
 
 ## Installation
 
-First, add `table` to your dependencies in `mix.exs`:
+First, add `elbat` to your dependencies in `mix.exs`:
 
     def deps do
-        [{:table, "~> 0.0.5"}]
+        [{:elbat, "~> 0.0.1"}]
     end
 
 Then, update your dependencies:
@@ -18,12 +18,12 @@ Then, update your dependencies:
 
 ## Usage
 
-    iex> IO.write Table.table(%{"key"=> "value"})
-    +-----+-------+
+    iex> IO.write Elbat.table(%{"key"=> "value"})
+    +-----|-------+
     | key | value |
-    +-----+-------+
+    +-----|-------+
 
-    iex> IO.write Table.table([%{"style"=> :ascii},
+    iex> IO.write Elbat.table([%{"style"=> :ascii},
                                %{"style"=> :unicode}], :unicode)
     ┌──────────┐
     │ style    │
@@ -32,11 +32,11 @@ Then, update your dependencies:
     │ :unicode │
     └──────────┘
 
-    iex> IO.write Table.table(%{"key"=> "multiline\nvalue"}, :unicode)
+    iex> IO.write Elbat.table(%{"key"=> "multiline\nvalue"}, :unicode)
     ┌─────┬───────────┐
     │ key ╎ multiline │
     │     ╎ value     │
     └─────┴───────────┘
 
-[hex-image]: https://img.shields.io/hexpm/v/table.svg?style=flat
-[hex-url]: https://hex.pm/packages/table
+[hex-image]: https://img.shields.io/hexpm/v/elbat.svg?style=flat
+[hex-url]: https://hex.pm/packages/elbat

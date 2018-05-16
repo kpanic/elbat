@@ -1,4 +1,4 @@
-defmodule Table do
+defmodule Elbat do
 
   @styles %{plain: %{top:    ~w[+- -+- -+],
                      middle: ~w[+- -+- -+],
@@ -98,20 +98,20 @@ defmodule Table do
 
   Examples
 
-      iex> IO.write Table.table(%{"key"=> "value", "more"=> "more val"})
+      iex> IO.write Elbat.table(%{"key"=> "value", "more"=> "more val"})
       +------+----------+
       | key  | value    |
       | more | more val |
       +------+----------+
 
-      iex> IO.write Table.table(["list", "is", "vertical"])
+      iex> IO.write Elbat.table(["list", "is", "vertical"])
       +----------+
       | list     |
       | is       |
       | vertical |
       +----------+
 
-      iex> IO.write Table.table([%{"style"=> :plain},
+      iex> IO.write Elbat.table([%{"style"=> :plain},
                                  %{"style"=> :unicode}], :unicode)
       ┌──────────┐
       │ style    │

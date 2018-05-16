@@ -1,4 +1,4 @@
-defmodule Table.Mixfile do
+defmodule Elbat.Mixfile do
   use Mix.Project
 
   def package do
