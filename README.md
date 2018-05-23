@@ -1,5 +1,10 @@
 # Elbat (formerly known as Table)
 
+This is a fork (*with renaming) of the Table package since upstream seems unmaintaned
+The main purpose of `Elbat` is to be able to calculate tabular output also when
+having html tags.
+If you don't need this small feature, please use the official `Table` package.
+
 [![hex][hex-image]][hex-url]
 
 ascii tables for cli
