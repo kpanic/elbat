@@ -122,7 +122,7 @@ defmodule Elbat do
       │ :unicode │
       └──────────┘
 
-      iex> IO.write Table.table([["list", "is", "horizontal"]])
+      iex> IO.write Elbat.table([["list", "is", "horizontal"]])
       +------+----+-----------+
       | list | is | horizontal|
       +------+----+-----------+

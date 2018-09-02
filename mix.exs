@@ -2,14 +2,14 @@ defmodule Elbat.Mixfile do
   use Mix.Project
 
   def package() do
-    [maintainers: ["Feng Zhou"],
+    [maintainers: ["Feng Zhou", "Marco Milanesi"],
      licenses: ["MIT"],
      description: "ascii tables for cli",
-     links: %{"GitHub" => "https://github.com/zweifisch/table"}]
+     links: %{"GitHub" => "https://github.com/kpanic/elbat"}]
   end
 
   def project() do
-    [app: :table,
+    [app: :elbat,
      version: "0.0.5",
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
